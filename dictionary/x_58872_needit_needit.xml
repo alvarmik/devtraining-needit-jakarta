@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element label="When Needed" mandatory="true" max_length="40" name="u_due_date_2" type="due_date"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Request Type" mandatory="true" max_length="1024" name="u_glide_list_4" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="What Needed" max_length="1024" name="u_glide_list_5" type="glide_list"/>
+        <element label="Requested For" mandatory="true" max_length="32" name="u_reference_3" reference="cmdb_rel_person" type="reference"/>
+    </element>
+</database>
